@@ -19,7 +19,11 @@
     />
   </head>
   <body>
-    <section>
+    <section class="container-fluid d-flex justify-content-center">
+      <div>
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+      </div>
+      
       <form>
         <input type="text" id="nameField" placeholder="Nome e Cognome" />
         <input type="text" id="kmField" placeholder="Km da percorrere" />
@@ -29,6 +33,7 @@
           <option value="senior">Over 65</option>
         </select>
         <button id="calculate">Genera</button>
+        <button type="reset" id="clearButton">Pulisci</button>
       </form>
     </section>
     <section>
