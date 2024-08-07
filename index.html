@@ -19,33 +19,57 @@
     />
   </head>
   <body>
-    <section class="container-fluid d-flex justify-content-center">
-      <div>
-        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 justify-content-center d-flex mt-4 mb-4">
+          <h2 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        </div>
       </div>
-      
-      <form>
-        <input type="text" id="nameField" placeholder="Nome e Cognome" />
-        <input type="text" id="kmField" placeholder="Km da percorrere" />
-        <select id="ageField">
-          <option value="maggiorenne">Maggiorenne</option>
-          <option value="minorenne">Minorenne</option>
-          <option value="senior">Over 65</option>
-        </select>
-        <button id="calculate">Genera</button>
-        <button type="reset" id="clearButton">Pulisci</button>
-      </form>
-    </section>
-    <section>
-      <div>
-        <h4>NOME PASSEGGERO</h4>
-        <span id="passengerName"></span>
+      <div class="row d-flex justify-content-center">
+        <form class="col-8 justify-content-center d-flex flex-wrap p-4">
+          <div class="flex-column d-flex align-items-center">
+            <span>Nome e Cognome</span>
+            <input
+              type="text"
+              class="text-center"
+              id="nameField"
+              placeholder="Nome e Cognome"
+            />
+          </div>
+          <div class="flex-column d-flex align-items-center">
+            <span>Km da percorrere</span>
+            <input
+              type="text"
+              class="text-center"
+              id="kmField"
+              placeholder="Km da percorrere"
+            />
+          </div>
+          <div class="flex-column d-flex align-items-center">
+            <span>Fascia d'età</span>
+            <select id="ageField">
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="minorenne">Minorenne</option>
+              <option value="senior">Over 65</option>
+            </select>
+          </div>
+          <div class="col-8 justify-content-center d-flex" id="button-div">
+            <button id="calculate">Genera</button>
+            <button id="clearButton">Pulisci</button>
+          </div>
+        </form>
       </div>
-      <div>
-        <h5>Costo Biglietto</h5>
-        <span id="price"></span>
-      </div>
-    </section>
+      <section>
+        <div>
+          <h4>NOME PASSEGGERO</h4>
+          <span id="passengerName"></span>
+        </div>
+        <div>
+          <h5>Costo Biglietto</h5>
+          <span id="price"></span>
+        </div>
+      </section>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,35 @@
+.container-fluid {
+  background-color: #b91450;
+}
+
+#button-div {
+  gap: 20px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+#button-div button {
+  background-color: #cccccc;
+  color: #b91450;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+form {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px black;
+  gap: 50px;
+}
+
+form span {
+  color: #b91450;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input,
+select {
+  border-radius: 10px;
+  border: solid 2px #b91450;
+}

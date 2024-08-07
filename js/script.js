@@ -30,4 +30,6 @@ button.addEventListener("click", function (e) {
 clearButton.addEventListener("click", function () {
   passengerName.innerText = "";
   price.innerText = "";
+  inputName.value = "";
+  inputKm.value = "";
 });
