@@ -21,10 +21,25 @@
   <body>
     <section>
       <form>
-        <input type="text" id="nameComplete" />
-        <input type="text" id="age" />
+        <input type="text" id="nameField" placeholder="Nome e Cognome" />
+        <input type="text" id="kmField" placeholder="Km da percorrere" />
+        <select id="ageField">
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="minorenne">Minorenne</option>
+          <option value="senior">Over 65</option>
+        </select>
         <button id="calculate">Genera</button>
       </form>
+    </section>
+    <section>
+      <div>
+        <h4>NOME PASSEGGERO</h4>
+        <span id="passengerName"></span>
+      </div>
+      <div>
+        <h5>Costo Biglietto</h5>
+        <span id="price"></span>
+      </div>
     </section>
     <script src="js/script.js"></script>
   </body>
