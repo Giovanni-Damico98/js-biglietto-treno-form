@@ -19,6 +19,7 @@
     />
   </head>
   <body>
+    <!-- SEZIONE CALCOLO BIGLIETTO -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 justify-content-center d-flex mt-4 mb-4">
@@ -53,22 +54,51 @@
               <option value="senior">Over 65</option>
             </select>
           </div>
+          <!-- BOTTONI -->
           <div class="col-8 justify-content-center d-flex" id="button-div">
             <button id="calculate">Genera</button>
             <button id="clearButton">Pulisci</button>
           </div>
         </form>
       </div>
-      <section>
-        <div>
-          <h4>NOME PASSEGGERO</h4>
-          <span id="passengerName"></span>
+
+      <!-- SEZIONE VISUALIZZA BIGLIETTO -->
+      <div class="row">
+        <div class="col-12 justify-content-center d-flex mt-4 mb-4">
+          <h2 class="text-white">IL TUO BIGLIETTO</h2>
         </div>
-        <div>
-          <h5>Costo Biglietto</h5>
-          <span id="price"></span>
+      </div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 d-flex flex-wrap p-4 mb-3" id="ticket-div">
+          <div class="col-12" id="card-title">
+            <h4 class="fw-bold fs-5">DETTAGLIO PASSEGGERI</h4>
+          </div>
+            
+            <div id="name-section">
+              <h4>NOME PASSEGGERO</h4>
+              <span id="passengerName" class="fw-bold fs-5"></span>
+            </div>
+
+            <div class="d-flex" id="train-info">
+              <div>
+                <h4 class="mb-5">Offerta</h4>
+                <span class="fw-bold">Biglietto Standard</span>
+              </div>
+              <div>
+                <h4 class="mb-5">Carrozza</h4>
+                <span id="carriageNumb" class="fw-bold"></span>
+              </div>
+              <div>
+                <h4 class="mb-5">Codice CP</h4>
+                <span id="cpNumb" class="fw-bold"></span>
+              </div>
+              <div>
+                <h4 class="mb-5">Costo Biglietto</h4>
+                <span id="price" class="fw-bold"></span>
+              </div>
+            </div>
         </div>
-      </section>
     </div>
     <script src="js/script.js"></script>
   </body>

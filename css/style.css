@@ -19,7 +19,7 @@ form {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 1px 1px 10px black;
-  gap: 50px;
+  gap: 60px;
 }
 
 form span {
@@ -32,4 +32,21 @@ form input,
 select {
   border-radius: 10px;
   border: solid 2px #b91450;
+}
+
+#ticket-div {
+  background-color: white;
+  height: 200px;
+}
+
+#name-section {
+  background-color: #808080;
+  height: 80%;
+  padding: 20px;
+}
+
+#train-info {
+  gap: 25px;
+  border-top: solid 1px #808080;
+  border-bottom: solid 1px #808080;
 }
